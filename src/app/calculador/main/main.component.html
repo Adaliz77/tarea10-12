@@ -1,5 +1,5 @@
 
-<h1>Calculadora Básica</h1>
+<h1>Calculadora Básica <!--{{ resultado==0?'':'Resultado: '+resultado }}--></h1>
 <hr>
 <div class="row">
   <div class="col">
@@ -9,10 +9,11 @@
 
   <div class="col">
     <h3>Componente Mostrar</h3>
-
+    <app-mostrar [mostrar]="resultado"></app-mostrar>
   </div>
 
 </div>
+
 
 
 

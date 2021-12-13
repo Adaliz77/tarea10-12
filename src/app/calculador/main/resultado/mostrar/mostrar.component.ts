@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-mostrar',
@@ -6,7 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./mostrar.component.css']
 })
 export class MostrarComponent {
+  @Input()
+  mostrar:number = 0;
 
-  
 
 }

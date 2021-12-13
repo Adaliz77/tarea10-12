@@ -6,9 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent  {
+  resultado:number = 0;
 
-mostrarResultado(resultado:number){
-  console.log(resultado);
+ mostrarResultado(resultado:number){
+  console.log('Muestro el resultado desde el componente hijo: ' + resultado);
+  this.resultado=resultado;
 }
 
 

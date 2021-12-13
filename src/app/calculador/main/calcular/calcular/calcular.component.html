@@ -1,11 +1,10 @@
 <p>calcular works!</p>
 
     <form>
-      <input type="number" placeholder="Ingrese un número" name="operandoA" [(ngModel)]="operandoA">
-      <input type="number" placeholder="Ingrese otro número" name="operandoB" [(ngModel)]="operandoB">
-     <!-- <label>{{resultado}}</label>-->
-      <hr>
-      <button type="submit">Clean</button>
+      <input type="number" name="operandoA" [(ngModel)]="operandoA">
+      <input type="number" name="operandoB" [(ngModel)]="operandoB">
+  
+      <button type="submit" (click)="reset()">Clean</button>
       <button type="submit" (click)="onSuma()">Sumar</button>
       <button type="submit" (click)="onResta()">Restar</button>
       <button type="submit" (click)="onMulti()">Multiplicar</button>
